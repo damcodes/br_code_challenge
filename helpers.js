@@ -81,9 +81,14 @@ export class HTML {
         newList.setAttribute("id", "dog-stats-list");
         parent.append(newList);
         ["Breed", "Age"].forEach( attr => {
-            let text = `${attr} - ${dog[attr.toLowerCase()] += 1}`;
+            let text = `${attr} - ${dog[attr.toLowerCase()]}`; //add += 1 for #2
             this.generateAndAppendListItem(newList, text);
         });
+    }
+
+    //remove for #3
+    static toggleHideElement(element, shouldHide) {
+        !!shouldHide ? element.setAttribute("hidden", "hidden") : element.removeAttribute("hidden");
     }
 
     /**
