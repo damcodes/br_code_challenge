@@ -1,9 +1,5 @@
 # BakerRipley Candidate Code Challenge
 
-The intent of this challenge is to assess your debugging skills and how you navigate an unfamiliar codebase. 
-
-The MVP (Minimum Viable Product) section below defines how the app should function once all bugs have been fixed.
-
 ## MVP
 
 - A user should be able to click "Show People" and see a list of people along with a "Dog Info" button for each person. 
@@ -12,11 +8,7 @@ The MVP (Minimum Viable Product) section below defines how the app should functi
 
 ## Project Structure
 
-- index.html - The initial structure of the DOM. Take note of imports and any identifying attributes of the nodes that could be used for DOM maniuplation in the Javascript files. No changes need to be made directly to this file.
-
-- index.js - This is the entry point for the app functionality.
-
-- db.json - Simulates an external server that is returning data to the client (index.js). You will not need to make any changes to this file.
+- db.json - Simulates an external server (the backend) that is returning data to the client (index.js). You will not need to make any changes to this file.
 
 - api.js - Exports a single class called Api that is imported in index.js. This class simulates an api that is fetching data from an external server (db.json). You will not need to make any changes to this file.
 
@@ -30,7 +22,7 @@ The MVP (Minimum Viable Product) section below defines how the app should functi
 
 3. In Chrome, press F12 to open dev tools, navigate to the Network tab, and check the "Disable cache" box if it's not already checked.
 
-Hot reload is enabled, so your changes will automatically be detected and reflected in the browser without needing to restarting the server.
+Hot reload is enabled, so your changes will automatically be detected and reflected in the browser without restarting the server.
 
 ## Problems: 
 
