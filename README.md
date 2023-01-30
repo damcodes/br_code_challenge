@@ -1,5 +1,9 @@
 # BakerRipley Candidate Code Challenge
 
+THe intent of this challenge is to assess your debugging process and how you navigate an unfamiliar codebase.
+
+The MVP (Minimum Viable Product) section below describes how the app should function once all bugs have been fixed.
+
 ## MVP
 
 - A user should be able to click "Show People" and see a list of people along with a "Dog Info" button for each person. 
@@ -8,7 +12,11 @@
 
 ## Project Structure
 
-- db.json - Simulates an external server (the backend) that is returning data to the client (index.js). You will not need to make any changes to this file.
+- index.html - The initial structure of the DOM. Take note of any imports and any identifying attributes of the nodes that could be used for DOM manipulation. Any DOM manipulation you deem necessary must be made in a JS file, so no changes will need to be made directly to this file.
+
+- index.js - This is the entry point for the app functionality.
+
+- db.json - Simulates an external server that is returning data to the client (index.js). You will not need to make any changes to this file.
 
 - api.js - Exports a single class called Api that is imported in index.js. This class simulates an api that is fetching data from an external server (db.json). You will not need to make any changes to this file.
 
