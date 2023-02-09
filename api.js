@@ -2,7 +2,7 @@ export class Api {
     
     /**
      * 
-     * @returns Promise containing an array of person objects 
+     * @returns {Promise} Once resolved, returns an array of person objects 
      *          fetched from db.json
      */
     static async getAllPeople() {
@@ -14,7 +14,7 @@ export class Api {
     /**
      *      
      * @param {Number} id 
-     * @returns Promise containing the dog object matching the 
+     * @returns {Promise} Once resolved, returns the dog object matching the 
      *          id param
      */
     static async getDogById(id) {
